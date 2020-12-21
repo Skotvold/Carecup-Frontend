@@ -1,0 +1,142 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'JetBrains Mono', monospace, sans-serif;
+    background: url(assets/images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Navigation bar*/
+.navigation-bar {
+    background: #cdeb8e; /* Old browsers */
+    background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cdeb8e 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cdeb8e 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cdeb8e 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #cdeb8e 0%,#a5c956 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+}
+
+/*
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 200%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 100%;
+        padding: 0;
+    }
+}
+
+.main-nav > .push {
+    margin-left: auto;
+}
+
+.main-nav > li {
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: honeydew;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: silver;
+    font-size: 130%;
+}
+
+
+/* Footer link*/
+footer {
+    /* place on the bottom */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    background: #252a47;
+    padding: 30px
+}
+
+.vector-link {
+    text-decoration: none;
+    color: green;
+}
+
+.vector-link:hover {
+    text-decoration: none;
+    color: greenyellow;
+    border: goldenrod;
+    text-decoration: underline;
+    border-width: 3px;
+}
+
+/* Main body*/
+
+h1 {
+    font-size: 5rem;
+    color: #ece7d9;
+    background-blend-mode: overlay;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.buffer {
+    height: 2rem;
+}
+
+.welcome-text {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 140%;
+    color: #ece7d9;
+}
+
+.btn {
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.btn-primary:hover {
+    background-color: rgb(133, 50, 50);
+    border-color: rgb(133, 50, 50);
+    border-width: 2px;
+    border-color: rgb(194, 182, 20);
+}
+
+.btn-main {
+    padding: 1rem 2rem;
+}
